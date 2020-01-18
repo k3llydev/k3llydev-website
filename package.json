@@ -23,7 +23,8 @@
     "start": "npm run server",
     "build": "polymer build",
     "postinstall": "npm run build",
-    "server": "node server.js"
+    "server": "node server.js",
+    "test": "polymer test"
   },
   "engines": {
     "node": "13.2.0",
