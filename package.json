@@ -8,11 +8,10 @@
     "git-blog-list": "https://github.com/k3llydev-website/git-blog-list.git",
     "navigation-header": "https://github.com/k3llydev-website/navigation-header.git",
     "poly-console": "https://github.com/k3llydev-website/console-playground.git",
-    "portfolio-organism": "git+https://github.com/k3llydev-website/portfolio-organism.git"
+    "portfolio-organism": "git+https://github.com/k3llydev-website/portfolio-organism.git",
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "express": "^4.17.1",
-    "polymer-cli": "^1.9.11",
     "@polymer/test-fixture": "^4.0.2",
     "@webcomponents/webcomponentsjs": "^2.0.0",
     "chai": "^4.2.0",
