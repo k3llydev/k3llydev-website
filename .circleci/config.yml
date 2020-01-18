@@ -28,6 +28,14 @@ jobs:
 
       - run: npm install
 
+      - run: 
+            name: 'Downloading chrome'
+            command: wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+      - run:
+            name: 'Installing chrome'
+            command: sudo dpkg -i google-chrome-stable_current_amd64.deb
+
       - save_cache:
           paths:
             - node_modules
