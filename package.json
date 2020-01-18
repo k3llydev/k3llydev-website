@@ -12,6 +12,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "polymer-cli": "^1.9.11",
     "@polymer/test-fixture": "^4.0.2",
     "@webcomponents/webcomponentsjs": "^2.0.0",
     "chai": "^4.2.0",
