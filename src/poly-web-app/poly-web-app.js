@@ -5,6 +5,7 @@ import 'navigation-header';
 import 'poly-console';
 import 'git-blog-list';
 import 'portfolio-organism';
+import data from '../data/portfolio';
 
 /**
  * @customElement
@@ -25,49 +26,7 @@ class PolyWebApp extends LitElement {
   constructor() {
     super();
     this.currentPage = 'home';
-    this.portfolio = {
-      experience: [
-        {
-          name: 'BBVA',
-          experience: [
-            {
-              job: 'Front-end Software Engineer - GloMo',
-              startDate: '00/00/0000',
-              endDate: '',
-              description: 'Code, debug and review features for the future global customer application.',
-              labours: ['Write efficient and working code', 'Test written code'],
-              tools: ['CELLS', 'JavaScript', 'HTML5', 'Polymer']
-            },
-            {
-              job: 'Developer at BEyG - Business Process Engineering',
-              startDate: '00/00/0000',
-              endDate: '',
-              description: 'Code, debug and review features for the future global customer application.',
-              labours: ['Write efficient and working code', 'Test written code'],
-              tools: "*".repeat(30).split('').map(e=>['JavaScript'])
-            }
-          ]
-        }
-      ],
-      skills: ['JavaScript', 'Python', 'HTML', 'CSS', 'Web Components', 'SASS', 'webpack', 'nodejs', 'Polymer', 'LitElement', 'C++', 'E2E', 'JSON', 'RESTFul APIs'],
-      education: [
-        {
-          place: 'Systems Automation Engineering, University of Matamoros',
-          startDate: '00/00/0000',
-          endDate: '00/00/0000',
-          description: '2 years of 3',
-          labours: [],
-          tools: ['OOP', 'Data Structure', '.NET', 'Visual Basic', 'C++', 'Algebra', 'Statistics', 'HTML']
-        }
-      ],
-      projects: [
-        {
-          name: 'bitten-c00kie',
-          briefDescription: 'A simple web app made in PHP to prove how client-side vulnerabilites are still an issue.',
-          url: 'https://github.com'
-        }
-      ]
-    };
+    this.portfolio = data;
     this.addEventListener('navigate-to-home', this._router);
     this.addEventListener('navigate-to-portfolio', this._router);
     this.addEventListener('navigate-to-blog', this._router);
@@ -221,7 +180,7 @@ class PolyWebApp extends LitElement {
         --portfolio-organism-main-titles-color: #FFF;
         --portfolio-organism-experience-item-title-color: var(--k3-bright-primary-color, #33d8ff);
         --portfolio-organism-experience-item-title-divider-color: #666;
-        --portfolio-organism-enterprise-title-color: var(--k3-bright-primary-color, #33d8ff);
+        --portfolio-organism-enterprise-title-color: #FFF;
 
         /** Experience items */
         --portfolio-organism-experience-item-background: #404040;
