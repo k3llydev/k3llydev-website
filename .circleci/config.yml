@@ -42,7 +42,17 @@ jobs:
 
       - run: sudo apt-get install google-chrome-stable
 
-      - run: sudo apt-get install default-jre
+      - run:
+            name: 'Setting up Java'
+            command: sudo add-apt-repository ppa:webupd8team/java
+
+      - run: sudo apt update; sudo apt install oracle-java8-installer
+
+      - run: sudo apt install oracle-java8-set-default
+
+      - run:
+            name: 'Verify Java version'
+            command: javac -version
 
       - save_cache:
           paths:
