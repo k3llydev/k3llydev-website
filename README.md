@@ -1,4 +1,4 @@
-![xdd](https://api.travis-ci.com/k3llydev/k3llydev-website.svg?token=cCKxgH77hTGzBwcFzoq1&branch=master)
+[![CI](https://circleci.com/gh/k3llydev/k3llydev-website.svg?style=svg)](https://github.com/k3llydev/k3llydev-website)
 
 # My website
 
