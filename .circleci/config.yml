@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:8.12
+      - image: circleci/node:8.12-browsers
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -27,32 +27,6 @@ jobs:
             - v1-dependencies-
 
       - run: npm install
-
-      - run: 
-            name: 'Downloading chrome'
-            command: wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
-      
-      - run:
-            name: 'Getting Chrome dependencies'
-            command: sudo apt-get install apt-transport-https
-
-      - run: sudo sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-
-      - run: sudo apt-get update
-
-      - run: sudo apt-get install google-chrome-stable
-
-      - run:
-            name: 'Setting up Java'
-            command: sudo add-apt-repository ppa:webupd8team/java
-
-      - run: sudo apt update; sudo apt install oracle-java8-installer
-
-      - run: sudo apt install oracle-java8-set-default
-
-      - run:
-            name: 'Verify Java version'
-            command: javac -version
 
       - save_cache:
           paths:
