@@ -22,7 +22,6 @@
   "scripts": {
     "start": "npm run server",
     "build": "polymer build",
-    "preinstall": "polymer --version || npm install -g polymer-cli",
     "server": "node server.js",
     "test": "polymer test --npm --module-resolution=node --local chrome"
   },
