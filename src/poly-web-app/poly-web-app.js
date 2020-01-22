@@ -187,6 +187,7 @@ class PolyWebApp extends LitElement {
         --portfolio-organism-experience-item-head-date-color: #FFF;
         --portfolio-organism-experience-item-skill-text-color: #FFF;
         --portfolio-organism-experience-item-description-color: #FFF;
+        --portfolio-organism-experience-item-head-source-color: var(--k3-bright-primary-color, #33d8ff);
 
         /** Experience item tools */
         /* --portfolio-organism-experience-item-tools-item-background: var(--k3-primary-color, #33d8ff); */
@@ -261,7 +262,7 @@ class PolyWebApp extends LitElement {
         <portfolio-organism
           portfolio-title="Professional experience"
           skills-title="Skills"
-          education-title="Education"
+          certifications-title="Certifications"
           projects-title="Personal projects"
           .portfolioData="${this.portfolio}">
         </portfolio-organism>
