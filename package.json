@@ -8,7 +8,7 @@
     "git-blog-list": "https://github.com/k3llydev-website/git-blog-list.git",
     "navigation-header": "https://github.com/k3llydev-website/navigation-header.git",
     "poly-console": "https://github.com/k3llydev-website/console-playground.git",
-    "portfolio-organism": "https://github.com/k3llydev-website/portfolio-organism.git",
+    "portfolio-organism": "https://github.com/k3llydev-website/portfolio-organism.git#3.0.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
