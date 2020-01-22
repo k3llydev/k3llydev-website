@@ -8,11 +8,10 @@
     "git-blog-list": "https://github.com/k3llydev-website/git-blog-list.git",
     "navigation-header": "https://github.com/k3llydev-website/navigation-header.git",
     "poly-console": "https://github.com/k3llydev-website/console-playground.git",
-    "portfolio-organism": "git+https://github.com/k3llydev-website/portfolio-organism.git",
+    "portfolio-organism": "https://github.com/k3llydev-website/portfolio-organism.git",
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "polymer-cli": "^1.9.11",
     "@polymer/test-fixture": "^4.0.2",
     "@webcomponents/webcomponentsjs": "^2.0.0",
     "chai": "^4.2.0",
@@ -22,7 +21,7 @@
   "scripts": {
     "start": "npm run server",
     "build": "polymer build",
-    "postinstall": "npm run build",
+    "preinstall": "polymer --version || npm install -g polymer-cli",
     "server": "node server.js",
     "test": "polymer test --npm --module-resolution=node --local chrome"
   },
