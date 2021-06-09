@@ -5,7 +5,14 @@
       "polymer-3"
     ]
   },
+  "sources": [
+    "src/**.js",
+    "manifest/**",
+    "package.json"
+  ],
   "extraDependencies": [
-    "node_modules/@fortawesome/fontawesome-free/sprites/*"
+    "node_modules/@fortawesome/fontawesome-free/sprites/*",
+    "node_modules/@webcomponents/webcomponentsjs/bundles/**",
+    "manifest.json"
   ]
 }
