@@ -23,7 +23,7 @@
   "scripts": {
     "start": "npm run server",
     "build": "polymer build",
-    "postbuild": "node finish-build.js",
+    "postbuild": "echo k3lly.dev > ./build/default/CNAME",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build/default",
     "test": "polymer test --npm --module-resolution=node --local chrome"

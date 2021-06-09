@@ -6,9 +6,7 @@
     ]
   },
   "sources": [
-    "src/**.js",
-    "manifest/**",
-    "package.json"
+    "src/**.js"
   ],
   "extraDependencies": [
     "node_modules/@fortawesome/fontawesome-free/sprites/*",
