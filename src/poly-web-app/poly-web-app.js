@@ -2,7 +2,7 @@ import { html, css, LitElement } from "../../node_modules/lit-element/lit-elemen
 import "../../node_modules/@polymer/iron-icon/iron-icon.js";
 import "../../node_modules/fa-icons/index.js";
 import "../../node_modules/navigation-header/navigation-handler.js";
-import "../components/poly-console/poly-console.js";
+import "../../node_modules/poly-console/poly-console.js";
 import "../../node_modules/git-blog-list/git-blog-list.js";
 import "../../node_modules/portfolio-organism/portfolio-organism.js";
 import data from "../data/portfolio.js";

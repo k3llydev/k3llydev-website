@@ -24,7 +24,7 @@
     "start": "npm run server",
     "build": "polymer build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build/default",
     "test": "polymer test --npm --module-resolution=node --local chrome"
   },
   "engines": {
