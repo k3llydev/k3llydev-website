@@ -1,20 +1,20 @@
-export var CommandList = {
+export const CommandList = {
   help: {
     usage: "Well, ain't this obvious? lol",
-    action: function action(command) {
+    action: function (command) {
       if (command[0] === "") {
         return {
           output: "Syntax error while using cookies."
         };
       }
 
-      var commands = ['hello', 'cookies', 'clear'],
+      let commands = ['hello', 'cookies', 'clear'],
           str = "";
 
       if (typeof command[0] != "undefined") {
         str = command[0] + " help: " + CommandList[command[0]].usage;
       } else {
-        str = "Commands list: \n" + commands.map(function (command) {
+        str = "Commands list: \n" + commands.map(command => {
           return " " + command;
         });
         str += ". Type 'help command' to see more info.";
@@ -29,8 +29,8 @@ export var CommandList = {
   hello: "Hi from " + document.domain + "!",
   cookies: {
     usage: "Use 'cookies action'. Actions: get, set [Name Value], delete",
-    action: function action(command) {
-      var str = "";
+    action: function (command) {
+      let str = "";
 
       if (command[0] === "get") {
         // GET COOKIES
@@ -62,7 +62,7 @@ export var CommandList = {
   },
   clear: {
     usage: "Type 'clear' and press enter to clear the console.",
-    action: function action() {
+    action: function () {
       return {
         updateState: {
           history: [],

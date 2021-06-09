@@ -2,7 +2,7 @@ import {html, css, LitElement} from 'lit-element';
 import '@polymer/iron-icon/iron-icon.js';
 import 'fa-icons';
 import 'navigation-header';
-import 'poly-console';
+import '../components/poly-console/poly-console';
 import 'git-blog-list';
 import 'portfolio-organism';
 import data from '../data/portfolio';
